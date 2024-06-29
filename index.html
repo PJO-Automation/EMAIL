@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Row Three Columns Table</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<style>
+  /* CSS styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 2px;
+    transform: scale(0.1); /* Scale everything to 40% */
+    transform-origin: top left; /* Set the origin to top left */
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th, td {
+    border: 0px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  /* Adjusting first column width */
+  td:first-child {
+    width: 30px; /* Adjust width as needed */
+  }
+  /* Styling for images */
+  td img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures images are centered */
+    margin-right: 5px; /* Adds a 5px gap to the right of the image */
+  }
+  /* Specific styling for Email.png */
+  .email-img {
+    transform: scale(1.5); /* Increase size by 150% */
+    transform-origin: left center; /* Scale relative to the left center */
+  }
+  /* Aligning the image to the right */
+  .right-align img {
+    float: right;
+    margin-left: 10px; /* Optional: Adds space to the left of the image */
+  }
+  /* Centering text in the last column */
+  td:last-child {
+    text-align: center;
+  }
+  /* Stretching the QR code image across three rows */
+  .stretch-image {
+    height: 150px; /* Adjust height as needed */
+  }
+  /* Aligning text in every second column to the left */
+  table tr td:nth-child(2) {
+    text-align: left;
+  }
+  /* Styling for Montserrat Medium */
+  .montserrat-medium {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 750; /* Medium weight */
+    color: rgb(229,50,63); /* RGB color: 229/50/63 */
+    font-size: 200%; /* Increase font size to 200% */
+    margin-bottom: 10px; /* Adds a 10px gap below */
+    padding-left: 10px; /* Adds a 10px gap before the text */
+    white-space: nowrap; /* Prevents text wrapping */
+  }
+  .montserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000; /* Bold weight */
+    color: rgb(11, 33, 62); /* RGB color: 11/33/62 */
+    font-size: 300%; /* Increase font size to 300% */
+    white-space: nowrap; /* Prevents text wrapping */
+  }
+  /* Red line styling */
+  .red-line {
+    border: none;
+    border-top: 2px solid red;
+    margin: 5px;
+  }
+</style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td class="montserrat-bold">
+        <span>Piotr Olesinski</span><br>B.Eng.Hons.
+      </td>
+      <td></td>
+      <td class="right-align stretch-image"><img src="PJO-logo_small.jpg" alt="PJO"></td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td class="red-line"></td>
+      <td class="red-line"></td>
+      <td class="red-line"></td>
+    </tr>
+    <tr>
+      <td style="width: 30px;"><img class="email-img" src="Phone.png" alt="Phone"></td>
+      <td class="montserrat-medium">07825628710</td>
+      <td rowspan="3" class="right-align stretch-image"><img src="QR.png" alt="QR"></td>
+    </tr>
+    <tr>
+      <td style="width: 30px;"><img class="email-img" src="https://pjoautomation-my.sharepoint.com/:i:/g/personal/piotr_pjoautomation_onmicrosoft_com/Ef68YNF-YqVFiUbHGW099zsBueUAVfEvOGtFDcFjydPSjA?e=ocFXrp" alt="Email"></td>
+      <td class="montserrat-medium">piotr@pjo-automation.co.uk</td>
+    </tr>
+    <tr>
+      <td style="width: 30px;"><img class="email-img" src="Web.png" alt="Web"></td>
+      <td class="montserrat-medium">www.pjo-automation.co.uk</td>
+    </tr>
+  </table>
+</body>
+</html>
